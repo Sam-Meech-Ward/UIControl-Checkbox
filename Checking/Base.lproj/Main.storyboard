@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Checking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLq-7H-OHh" customClass="Checkbox" customModule="Checking" customModuleProvider="target">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0XM-ey-MMr"/>
+                                    <constraint firstAttribute="width" secondItem="bLq-7H-OHh" secondAttribute="height" id="vw4-4e-bb6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GhM-E0-hQd"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSb-BT-mJ6" customClass="Checkbox" customModule="Checking" customModuleProvider="target">
+                                <rect key="frame" x="272" y="398" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RSb-BT-mJ6" secondAttribute="height" id="Hhg-fc-Yo2"/>
+                                    <constraint firstAttribute="width" constant="100" id="OLR-wi-yjf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="checked" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bLq-7H-OHh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H5b-Wb-lpL"/>
+                            <constraint firstItem="RSb-BT-mJ6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XLp-00-SJA"/>
+                            <constraint firstItem="bLq-7H-OHh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lq8-vw-Jbl"/>
+                            <constraint firstItem="RSb-BT-mJ6" firstAttribute="leading" secondItem="bLq-7H-OHh" secondAttribute="trailing" constant="15" id="nFn-ea-9bB"/>
+                            <constraint firstItem="RSb-BT-mJ6" firstAttribute="width" secondItem="RSb-BT-mJ6" secondAttribute="height" id="q0q-6f-0eO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
